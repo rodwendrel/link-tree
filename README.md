@@ -1,0 +1,1 @@
+# Interface de uma página central de links sociais. 
