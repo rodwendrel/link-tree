@@ -1,3 +1,5 @@
+/* Reset e Variáveis */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,8 @@
     --instagram-color: #c13584;
     --twitch-color: #9146ff; 
 }
+
+/* Estilização Geral */
 
 body {
     background-image: url(https://rodwendrel.github.io/link-tree/img/background.png);
@@ -36,6 +40,8 @@ h1 {
     font-weight: 300;
 }
 
+/* Estilização dos elementos da página */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -53,6 +59,12 @@ h1 {
     border-radius: 50%;
 
 }
+
+.frame-spotify {
+    width: 85%;
+}
+
+
 .container-links ul {
     display: flex;
     flex-direction: column;
@@ -74,6 +86,10 @@ h1 {
     height: 3rem;
 }
 
+.container-links ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .divider {
     height: 1px;
     width: 30vw;
@@ -83,6 +99,10 @@ h1 {
 
 footer {
     font-size: .6rem;
+}
+
+footer a:hover{
+    font-weight: bold;
 }
 
 /* Estilização de Cada Link da lista */
@@ -117,4 +137,69 @@ footer {
 
 .icon-twitch {
     color: var(--twitch-color);
+}
+
+
+/* Aplicação de Responsividade */
+
+@media(min-width: 1024px) {
+
+    .frame-spotify {
+        width: 85%;
+    }
+
+    .container-links ul li {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    
+        border-radius: 25px;
+        width: 50vw;
+        height: 3rem;
+    }
+
+    .container-links ul li:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .divider {
+        height: 1px;
+        width: 28vw;
+        background: linear-gradient(270deg, rgb(195, 20, 50) -3.55%, rgb(80, 30, 116) 100.21%);
+    
+    }
+    
+}
+
+@media(min-width: 1920px) {
+
+    .frame-spotify {
+        width: 35%;
+    }
+
+    .container-links ul li {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    
+        border-radius: 25px;
+        width: 25vw;
+        height: 3rem;
+    }
+
+    .container-links ul li:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .divider {
+        height: 1px;
+        width: 15vw;
+        background: linear-gradient(270deg, rgb(195, 20, 50) -3.55%, rgb(80, 30, 116) 100.21%);
+    
+    }
+    
 }
