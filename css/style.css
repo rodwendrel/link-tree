@@ -21,8 +21,13 @@ ul {
 }
 
 body {
+<<<<<<< HEAD
     background-image: url(/img/background.png);
     background-position: center;
+=======
+    background-image: url(https://rodwendrel.github.io/link-tree/img/background.png);
+    background-position: top;
+>>>>>>> cfc97b4d93a6e3794b9e6193f3576ae47807ee0d
     font-family: var(--font-familly);
     color: var(--font-color);
 
