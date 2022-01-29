@@ -8,6 +8,18 @@
     --font-familly: 'Montserrat', sans-serif;
     --font-color: rgb(242, 243, 244);
 
+    --spotify-color: #1db954;
+    --youtube-color: #ff0000;
+    --instagram-color: #c13584;
+    --twitch-color: #9146ff; 
+}
+
+body {
+    background-image: url(https://rodwendrel.github.io/link-tree/img/background.png);
+    background-position: center;
+    font-family: var(--font-familly);
+    color: var(--font-color);
+
 }
 
 a {
@@ -20,17 +32,8 @@ ul {
     list-style: none;
 }
 
-body {
-<<<<<<< HEAD
-    background-image: url(/img/background.png);
-    background-position: center;
-=======
-    background-image: url(https://rodwendrel.github.io/link-tree/img/background.png);
-    background-position: top;
->>>>>>> cfc97b4d93a6e3794b9e6193f3576ae47807ee0d
-    font-family: var(--font-familly);
-    color: var(--font-color);
-
+h1 {
+    font-weight: 300;
 }
 
 .container {
@@ -43,15 +46,19 @@ body {
     height: 100vh;
     margin: 0 auto;
 
-    gap: 8.5rem;
+    gap: 2.5rem;
 }
 
+.container img { 
+    border-radius: 50%;
+
+}
 .container-links ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 3px;
     
 
 }
@@ -62,9 +69,52 @@ body {
     justify-content: center;
     margin-top: 20px;
 
-    border: 1px solid white;
     border-radius: 25px;
     width: 50vw;
-    height: 3.2rem;
+    height: 3rem;
 }
 
+.divider {
+    height: 1px;
+    width: 30vw;
+    background: linear-gradient(270deg, rgb(195, 20, 50) -3.55%, rgb(80, 30, 116) 100.21%);
+
+}
+
+footer {
+    font-size: .6rem;
+}
+
+/* Estilização de Cada Link da lista */
+
+.spotify  {
+    border: 1px solid var(--spotify-color);
+}
+
+.icon-spotify {
+    color: var(--spotify-color);
+}
+
+.youtube  {
+    border: 1px solid var(--youtube-color);
+}
+
+.icon-youtube {
+    color: var(--youtube-color);
+}
+
+.instagram {
+    border: 1px solid var(--instagram-color);
+}
+
+.icon-instagram {
+    color: var(--instagram-color);
+}
+
+.twitch {
+    border: 1px solid var(--twitch-color);
+}
+
+.icon-twitch {
+    color: var(--twitch-color);
+}

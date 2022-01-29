@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?yrsnva');
-  src:  url('fonts/icomoon.eot?yrsnva#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?yrsnva') format('truetype'),
-    url('fonts/icomoon.woff?yrsnva') format('woff'),
-    url('fonts/icomoon.svg?yrsnva#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?yii2g3');
+  src:  url('fonts/icomoon.eot?yii2g3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?yii2g3') format('truetype'),
+    url('fonts/icomoon.woff?yii2g3') format('woff'),
+    url('fonts/icomoon.svg?yii2g3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -36,4 +36,7 @@
 }
 .icon-twitch:before {
   content: "\ea9f";
+}
+.icon-github:before {
+  content: "\eab0";
 }
